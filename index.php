@@ -10,7 +10,7 @@
 			
 			$altura = $_POST["altura"];
 			$peso = $_POST["peso"];
-			$imc = $peso / (2 * $altura);
+			$imc = $peso / ($altura * $altura);
  
 			if ($imc < 17){
 				$msg = "Muito abaixo do peso!";
@@ -37,7 +37,7 @@
 				echo "<b>IMC: </b>".$imc."<b> Mensagem: </b>".$msg;
 			}
 			if ($imc > 40){
-				$msg = "Obesidade III (mórbida)";
+				$msg = "Obesidade III (mï¿½rbida)";
 				echo "<b>IMC: </b>".$imc."<b> Mensagem: </b>".$msg;
             }
 }
