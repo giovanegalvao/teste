@@ -5,7 +5,7 @@
 		<input name="Submit" type="submit" id="calcular" value="Calcular">
 		</form>
 		
-
+<?php
 
 			if(isset($_POST["peso"]) and isset($_POST["altura"])){
 			
